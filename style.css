@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* STYLE */
+
+body {
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+    padding: 5rem;
+}
+
+.name {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.cast-on-info {
+    font-style: italic;
+}
+
+.notes {
+    white-space: no-wrap;
+    resize: none;
+    padding: 1rem;
+    border-left: 0.3rem solid #c8c9c970;
+    transition: all 0.15s ease-in-out;
+}
+
+.notes:focus {
+    outline: none;
+    border-left: 0.3rem solid #ddc1df;
+    background-color: #ddc1df40;
+    transition: all 0.15s ease-in-out;
+}
+
+.notes:hover {
+    border-left: 0.3rem solid #ddc1df;
+    background-color: #ddc1df40;
+    transition: all 0.15s ease-in-out;
+}
+
+.rows {
+    list-style-position: inside;
+}
+
+.row {
+    row-gap: 0 !important;
+}
+
+.row-active {
+    margin: 1rem;
+    font-size: 1rem;
+    transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.row-disabled {
+    font-size: 0.8rem;
+    color: #c8c9c9;
+    transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.row-start,
+.row-end {
+    border-radius: 0.2rem;
+}
+
+.row-repetition,
+.stitch-group {
+    border-radius: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.stitch {
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.row-active .stitch:hover {
+    background-color: #ddc1df;
+}
+
+.highlighted,
+.stitch:hover,
+.row-start:hover,
+.row-repetition:hover,
+.row-end:hover,
+.stitch-group:hover {
+    background-color: #ddc1df40;
+}
+
+.explanation-hint {
+    font-style: italic;
+}
